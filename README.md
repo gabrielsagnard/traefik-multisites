@@ -53,6 +53,12 @@ Et depuis le répertoire cloné on lance :
     
     docker-compose up -d 
     
-Résultat : 
+# Résultat : 
+
+Les deux backends que vous avez créés seront servis par Traefik sur http://traefik.YOURDOMAIN et http://apache.YOURDOMAIN. Vous pouvez visiter le tableau de bord Traefik sur http://traefik.YOURDOMAIN:8080/dashboard ou http://apache.YOURDOMAIN:8080/dashboard.
 
 <img src="https://github.com/gabrielsagnard/traefik-multisites/blob/master/Capture%20d%E2%80%99e%CC%81cran%202018-09-16%20a%CC%80%2009.11.09.png" width="800px"></img>
+
+<img src="https://github.com/gabrielsagnard/traefik-multisites/blob/master/Capture%20d%E2%80%99e%CC%81cran%202018-09-16%20a%CC%80%2009.11.22.png" width="800px"></img>
+
+<img src="https://github.com/gabrielsagnard/traefik-multisites/blob/master/Capture%20d%E2%80%99e%CC%81cran%202018-09-16%20a%CC%80%2009.11.43.png" width="800px"></img>
