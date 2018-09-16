@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  proxy:
+    image: traefik:latest
+    command: --web --docker --docker.domain=YOURDOMAIN.local --logLevel=DEBUG
+    networks:
+      - traefik
+    ports:
+      - 80:80
+      - 443:443
+      - 8080:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root/traefik.toml:/traefik.toml
+      - /root/acme.json:/acme.json
+          
+  apache:
+    image: httpd:latest
+    labels:
+      - "traefik.frontend.rule=Host:apache.YOURDOMAIN"
+    networks:
+      - traefik
+  nginx:
+    image: nginx:latest
+    labels:
+      - "traefik.frontend.rule=Host:Traefik.YOURDOMAIN"
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true
