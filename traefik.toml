@@ -1,0 +1,29 @@
+logLevel = "DEBUG"
+defaultEntryPoints = ["http", "https"]
+
+[web]
+address = ":8080"
+
+[docker]
+domain = "YOURDOMAIN.local"
+watch = true
+
+[entryPoints]
+  [entryPoints.http]
+  address = ":80"
+    [entryPoints.http.redirect]
+    entryPoint = "https"
+  [entryPoints.https]
+  address = ":443"
+    [entryPoints.https.tls]
+ 
+[acme]
+  email="YOUREMAIL"
+  storage="acme.json"
+  entryPoint="https"
+  acmeLogging=true
+  onDemand=false
+  OnHostRule=true
+
+[acme.httpChallenge]
+  entryPoint = "http"
