@@ -27,3 +27,15 @@ Tout d'abord, vous devez installer docker-compose si vous ne l'avez pas déjà f
     sudo chmod +x /usr/bin/docker-compose
 
 Pour exécuter Traefik en utilisant docker-compose :
+
+git clone 
+
+On va modifier le fichier docker-compose.yml avec vos propres informations (domaine) :
+
+    sudo nano docker-compose.yml
+    
+Puis on modifie le fichier traefik.toml avec les informations propres (domaine et adresse mail):
+
+    sudo nano traefik.toml
+    
+
