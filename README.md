@@ -52,3 +52,7 @@ On crée le réseau traefik pour Docker :
 Et depuis le répertoire cloné on lance : 
     
     docker-compose up -d 
+    
+Résultat : 
+
+Capture d’écran 2018-09-16 à 09.11.43.png
