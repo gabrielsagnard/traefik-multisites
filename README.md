@@ -55,4 +55,4 @@ Et depuis le répertoire cloné on lance :
     
 Résultat : 
 
-<img src="https://github.com/gabrielsagnard/traefik-multisites/blob/master/Capture%20d%E2%80%99e%CC%81cran%202018-09-16%20a%CC%80%2009.11.09.png" width="500px"></img>
+<img src="https://github.com/gabrielsagnard/traefik-multisites/blob/master/Capture%20d%E2%80%99e%CC%81cran%202018-09-16%20a%CC%80%2009.11.09.png" width="800px"></img>
