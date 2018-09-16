@@ -1,4 +1,4 @@
-# traefik-multisites
+# Traefik-multisites
 
 Conditions préalables:
 
@@ -28,7 +28,7 @@ Tout d'abord, vous devez installer docker-compose si vous ne l'avez pas déjà f
 
 Pour exécuter Traefik en utilisant docker-compose :
 
-git clone 
+    git clone https://github.com/gabrielsagnard/traefik-multisites.git
 
 On va modifier le fichier docker-compose.yml avec vos propres informations (domaine) :
 
