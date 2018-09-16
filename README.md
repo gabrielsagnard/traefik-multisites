@@ -38,4 +38,17 @@ Puis on modifie le fichier traefik.toml avec les informations propres (domaine e
 
     sudo nano traefik.toml
     
+On crée ensuite le répertoire et le fichier nécessaire pour les certificats TLS :
+    
+    touch /root/acme.json
+    chmod 600 /root/acme.json
 
+# Etape 3. Lancement
+
+On crée le réseau traefik pour Docker : 
+
+    docker network create traefik
+    
+Et depuis le répertoire cloné on lance : 
+    
+    docker-compose up -d 
